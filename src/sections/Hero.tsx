@@ -23,7 +23,7 @@ export function Hero() {
             transition={{ duration: 0.5 }}
             className="text-4xl font-bold tracking-tight sm:text-5xl"
             >
-              Let&rsquo;s turn &lsquo;Vibe Coders&rsquo; into &lsquo;Reliable Shippers&rsquo;!
+              Let&rsquo;s turn &lsquo;Vibe Coders&rsquo; into &lsquo;Reliable Shippers&rsquo;! 🔥🔥🔥🔥🔥
             </motion.h1>
           {/* <motion.p
             initial={{ opacity: 0, y: 12 }}
