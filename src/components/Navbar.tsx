@@ -18,6 +18,7 @@ export function Navbar() {
           <span>Personal Site</span>
         </Link>
         <div className="hidden gap-6 text-sm sm:flex">
+          <a href="#galaxy" className="opacity-80 hover:opacity-100">Galaxy</a>
           <a href="#projects" className="opacity-80 hover:opacity-100">Projects</a>
           <a href="#about" className="opacity-80 hover:opacity-100">About</a>
           <a href="#contact" className="opacity-80 hover:opacity-100">Contact</a>

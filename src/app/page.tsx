@@ -3,6 +3,7 @@
 
 import Navbar from "@/components/Navbar";
 import { Hero } from "@/sections/Hero";
+import { Galaxy } from "@/sections/Galaxy";
 import { Projects } from "@/sections/Projects";
 import { About } from "@/sections/About";
 import { Contact } from "@/sections/Contact";
@@ -14,6 +15,7 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
+        <Galaxy />
         <Anime3D />
         <Projects />
         <About />
