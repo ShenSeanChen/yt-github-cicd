@@ -15,7 +15,7 @@ export function Navbar() {
     <header className="sticky top-0 z-40 w-full border-b border-zinc-200 bg-white/80 backdrop-blur dark:border-zinc-800 dark:bg-black/50">
       <nav className="mx-auto flex h-14 w-full max-w-6xl items-center justify-between px-4 sm:px-6">
         <Link href="#" className="font-semibold tracking-tight">
-          <span>Personal Site</span>
+          <span>Personal Site by GPT-5</span>
         </Link>
         <div className="hidden gap-6 text-sm sm:flex">
           <a href="#solar-system" className="opacity-80 hover:opacity-100">Solar System</a>

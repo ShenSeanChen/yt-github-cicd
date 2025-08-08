@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Personal Site",
+  title: "Personal Site by GPT-5",
   description: "A polished Next.js personal website with CI/CD-ready structure.",
 };
 

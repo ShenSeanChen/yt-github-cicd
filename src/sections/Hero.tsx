@@ -13,7 +13,7 @@ import Container from "@/components/Container";
  */
 export function Hero() {
   return (
-    <section id="home" className="border-b border-zinc-200 py-16 dark:border-zinc-800">
+    <section id="home" className="border-b border-zinc-200 py-2 dark:border-zinc-800">
       <Container>
         <div className="flex flex-col items-start gap-6 py-8">
           <motion.h1
@@ -23,9 +23,9 @@ export function Hero() {
             transition={{ duration: 0.5 }}
             className="text-4xl font-bold tracking-tight sm:text-5xl"
           >
-            Hi, I build delightful web experiences.
+            Let's turn 'Vibe Coders' into 'Reliable Shippers'!
           </motion.h1>
-          <motion.p
+          {/* <motion.p
             initial={{ opacity: 0, y: 12 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -34,7 +34,7 @@ export function Hero() {
           >
             Full‑stack product tinkerer focused on Next.js, TypeScript, and
             thoughtful UX. Weekend projects welcome.
-          </motion.p>
+          </motion.p> */}
           <motion.div
             initial={{ opacity: 0, y: 12 }}
             whileInView={{ opacity: 1, y: 0 }}

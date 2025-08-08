@@ -1,4 +1,4 @@
-# Personal Site (Next.js + 3D Solar System)
+# Personal Site by GPT-5 (Next.js + 3D Solar System)
 
 A vibe-friendly, reliable personal website built with Next.js 15, Tailwind, and React Three Fiber. It ships fast, looks wow, and stays safe with tiny guardrails.
 
