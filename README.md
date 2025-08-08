@@ -1,36 +1,115 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Personal Site (Next.js + 3D Solar System)
 
-## Getting Started
+A vibe-friendly, reliable personal website built with Next.js 15, Tailwind, and React Three Fiber. It ships fast, looks wow, and stays safe with tiny guardrails.
 
-First, run the development server:
+## Quickstart
 
+1) Clone and install
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone <your-repo-url>
+cd personal-site
+npm i
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2) Run locally
+```bash
+npm run dev
+# open http://localhost:3000
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3) Build (sanity check)
+```bash
+npm run build
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## What’s inside
+- Interactive 3D Solar System home (click planets to view project details)
+- Clean sections: Hero, Projects, About, Contact
+- TypeScript, ESLint, Tailwind pre-configured
 
-## Learn More
+## “Vibe → reliable” workflow (solo friendly)
 
-To learn more about Next.js, take a look at the following resources:
+- **Main = your live show**
+  - Don’t push straight to `main`.
+  - Make a branch: `git switch -c feat/my-change`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Preview = dress rehearsal**
+  - Connect GitHub repo to Vercel or Lovable.
+  - Every PR gets a Preview URL you can click and share.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Robot check = tiny safety tunnel (optional but recommended)**
+  - Add `.github/workflows/ci.yml` to run: `tsc`, `eslint`, `next build` on PRs.
+  - In repo Settings → Branch protection on `main`: require PR + passing checks.
 
-## Deploy on Vercel
+- **Ship = one smooth move**
+  - Merge PR → auto deploy to Production.
+  - If you want a pause: require one approval (you) via GitHub Environments.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Secrets = keep keys off-stage**
+  - Put example keys in `.env.example` (no real values).
+  - Store real values in Vercel/Lovable (Preview vs Production).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Make your first change (example)
+
+1) Create a branch
+```bash
+git switch -c feat/update-hero-copy
+```
+
+2) Edit the text in `src/sections/Hero.tsx` and save.
+
+3) Local check (fast):
+```bash
+npx tsc --noEmit && npm run lint && npm run build
+```
+
+4) Commit and push
+```bash
+git add -A
+git commit -m "feat(hero): sharper intro copy"
+git push -u origin feat/update-hero-copy
+```
+
+5) Open PR
+- Confirm checks are green (or fix red).
+- Click the Preview URL and review the change.
+
+6) Merge → Deploy
+- Merge when happy. If prod is gated, approve the deploy.
+- If something’s off, rollback from the host dashboard.
+
+## Files you’ll touch most
+- `src/sections/SolarSystem.tsx` — the 3D home scene
+- `src/sections/Hero.tsx` — headline & CTAs
+- `src/sections/Projects.tsx` — project grid
+- `src/lib/projects.ts` — project metadata (titles, colors, topics)
+
+## Optional: Minimal CI file
+Create `.github/workflows/ci.yml`:
+```yaml
+name: CI
+on:
+  pull_request:
+    branches: [ main ]
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - run: npx tsc --noEmit
+      - run: npm run lint --if-present
+      - run: npm run build
+```
+
+## Troubleshooting
+- Build fails on `_document` or favicon: this repo includes a minimal `src/pages/_document.tsx` and `app/icon.ico` to keep Next happy.
+- 3D feels heavy: lower star counts in `SolarSystem.tsx` or disable Bloom.
+
+---
+
+Happy shipping! Keep the vibes—add just enough guardrails to never ship oopsies.
