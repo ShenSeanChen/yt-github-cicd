@@ -6,6 +6,7 @@ import { Hero } from "@/sections/Hero";
 import { Projects } from "@/sections/Projects";
 import { About } from "@/sections/About";
 import { Contact } from "@/sections/Contact";
+import { Anime3D } from "@/sections/Anime3D";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
+        <Anime3D />
         <Projects />
         <About />
         <Contact />
