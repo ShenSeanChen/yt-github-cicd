@@ -1,6 +1,6 @@
 # Personal Site by GPT-5 (Next.js + 3D Solar System)
 
-📹 Full YouTube Guide: [Youtube link](https://www.youtube.com/watch?v=dSS6DgErZXA&list=PLE9hy4A7ZTmpGq7GHf5tgGFWh2277AeDR&index=21)
+📹 Full YouTube Guide: [Youtube link](https://www.youtube.com/watch?v=30hnPNnzyNM&list=PLE9hy4A7ZTmpGq7GHf5tgGFWh2277AeDR&index=19)
 
 🚀 X Post: [X link](https://x.com/ShenSeanChen/status/1947796273899139530)
 
