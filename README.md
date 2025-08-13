@@ -2,7 +2,7 @@
 
 📹 Full YouTube Guide: [Youtube link](https://www.youtube.com/watch?v=30hnPNnzyNM&list=PLE9hy4A7ZTmpGq7GHf5tgGFWh2277AeDR&index=19)
 
-🚀 X Post: [X link](https://x.com/ShenSeanChen/status/1895163913161109792)
+🚀 X Post: [X link](https://x.com/shenseanchen/status/1955602279492395119?s=46)
 
 💻 Launch Full Stack Product: [Github Repo](https://github.com/ShenSeanChen/launch-mvp-stripe-nextjs-supabase)
 
